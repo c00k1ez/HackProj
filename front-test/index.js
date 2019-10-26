@@ -30,7 +30,7 @@ app.get('/b2', function(req, res, next) {
     res.render('./b2', { title: 'Auth' });
 });
 app.get('/b3', function(req, res, next) {
-    res.render('./b3', { artist: 'Auth',title:"" });
+    res.render('./b3', { author: 'Auth',title:"kek",bpm:120,mode:"relax" });
 });
 app.get('/b4', function(req, res, next) {
     res.render('./b4', { title: 'Auth' });

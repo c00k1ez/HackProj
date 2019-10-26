@@ -2,7 +2,6 @@ UpdateCanvas = function (func){
     window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.amozRequestAnimationFrame || (function (func){setTimeout(func, 16.666);});
     window.requestAnimationFrame(func);
 };
-
 let width = 0;
 Animate = function ()
 {
@@ -68,17 +67,19 @@ function hard() {
         play()
     }
 }
-function slow() {
-    x = 3000;
-    while (x<5000){
-        setTimeout(()=>{
-            Animate();
-            x+=1000
-        },x)
-    }
-}
 Animate();
-slow();
+if (mode ==="stay") {
+    x=10000
+    play()
+}
+else if (mode ==="relax"){
+    x=5000
+    play()
+}
+else {
+    hard()
+}
+
 function play(){
     setInterval(()=>{
         Animate();

@@ -1,15 +1,19 @@
 link(href="newst.css" rel="stylesheet")
+script.
+    mode="#{mode}";
+
 div(id="flex-col")
     div(id="float")
         div(class="right")
-            div
-                p 120BPM
+            div(class="border")
+                p 120 BPM
                 div
         div(class="left")
-            h3 Lalala
-            span Y23lfmdfkm;s
-    img(src="/grey.png" class="grey")
+            h3= author
+            span= title
+    canvas(id="cvs3" width="550" height="300")
     div(class="flexbutts")
         img(src="/next1.png" class="reverse next")
         img(src='/white.png')
         img(src='/next1.png' class="next")
+script(src="heart.js")
