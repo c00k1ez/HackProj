@@ -1,0 +1,15 @@
+link(href="style.css" rel="stylesheet")
+
+div(id="contenitore")
+    h1 Artist - Song Name
+    canvas(id="cvs3" width="550" height="300")
+    div(id="buttons")
+        img(src="play.png")
+        img(src="next.png")
+        img(src="add.png")
+    div(class="length")
+        input(type="range" min="0" max="100" value="40" id="fader" step="1")
+        output(for="fader" class="duration")
+
+
+script(src="heart.js")

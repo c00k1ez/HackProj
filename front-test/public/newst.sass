@@ -1,0 +1,90 @@
+button
+  font-size: 30px
+  width: 150px
+  padding-left: 20px
+  padding-right: 20px
+  border-radius: 7px
+  background-color: rgba(63, 139, 14, 0)
+  color: white
+
+@font-face
+  font-family: 'Open Sans'
+  font-style: normal
+  font-weight: 400
+  src: local('Open Sans'), local('OpenS1ans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff')
+
+@font-face
+  font-family: "Geom"
+  src: local('Geom'), url("ofont.ru_SF UI Display.ttf") format("truetype")
+html
+  overflow-x: hidden
+  font-family: "Geom",serif
+body
+  color: white!important
+  background: black
+  width: 100vw
+  margin: 0
+
+#flex-col, .flex-col
+  display: flex
+  flex-direction: column
+  height: 100%
+  width: 100vw
+  justify-content: center
+  text-align: center
+  div
+    margin-top: 30px
+
+#float
+  position: relative
+  margin-bottom: 50px
+  margin-top: 0!important
+  text-align: initial
+  .left
+    float: left
+    margin-left: 20px
+  .right
+    float: right
+    margin-right: 20px
+
+.flexbutts
+  .reverse
+    -webkit-transform: scaleX(-1)
+    transform: scaleX(-1)
+  img
+    margin: 0 40px 0
+    height: 80px
+    width: 80px
+  .next
+    height: 50px!important
+    width: 50px!important
+.grey
+  width: 100vw
+  height: 300px
+
+.title
+  text-align: center
+  width: 100vw
+  height: 100vh
+  background-image: url("/title.png")
+  background-size: 100% 100%
+  .red
+    width: 50px
+    height: 250px
+    background-color: red
+    position: fixed
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+  h1
+    position: fixed
+    top: 45%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+
+.down
+  position: fixed
+  bottom: 30px
+  right: 37%
